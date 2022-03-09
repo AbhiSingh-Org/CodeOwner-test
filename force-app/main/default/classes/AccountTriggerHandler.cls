@@ -20,8 +20,6 @@ public with sharing class AccountTriggerHandler {
 
         Decimal amount = 0;
 
-        System.debug('accSingle: ' +accSingle);
-
         Account childAndCurrentAccounts = [ SELECT Id, name, amount__c, ( SELECT Id, Amount__c FROM childaccounts ) FROM Account WHERE Id = :accSingle ];
         // Account cloneAccount        = [ SELECT Id, name, amount__c, parentId FROM Account WHERE Id = :accSingle ];
 
