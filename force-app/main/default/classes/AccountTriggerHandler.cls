@@ -44,8 +44,6 @@ public with sharing class AccountTriggerHandler {
 
         Account parentAccount = [ SELECT Id, name, amount__c, parentId FROM Account WHERE Id = :accSingle ];
 
-        system.debug('parentAccount : '+parentAccount.parentId);
-
         if( parentAccount.parentId == null ){
 
             System.debug('Null');
