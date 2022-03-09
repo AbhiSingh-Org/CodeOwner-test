@@ -42,8 +42,6 @@ public with sharing class AccountTriggerHandler {
         childAndCurrentAccounts.amount__c = amount;        
         update childAndCurrentAccounts;
 
-        system.debug('Amount : '+childAndCurrentAccounts.amount__c);
-
         Account parentAccount = [ SELECT Id, name, amount__c, parentId FROM Account WHERE Id = :accSingle ];
 
         system.debug('parentAccount : '+parentAccount.parentId);
