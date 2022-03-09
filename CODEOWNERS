@@ -1,16 +1,16 @@
 # These owners will be the default owners for everything in
 # the repo. Unless a later match takes precedence,
-# @global-owner1 and @global-owner2 will be requested for
+# apex-reviewer team will be requested for
 # review when someone opens a pull request.
 *      @AbhiSingh-Org/apex-reviewer
 
 # Order is important; the last matching pattern takes the most
 # precedence. When someone opens a pull request that only
-# modifies JS files, only @js-owner and not the global
+# modifies trigger files, only @abhishekBits04669 and not the global
 # owner(s) will be requested for a review.
 *.trigger    @abhishekBits04669
 
-# In this example, @doctocat owns any file in the `/docs`
+# In this example, @relativelyAbhi owns any file in the `/classes`
 # directory in the root of your repository and any of its
 # subdirectories.
 /force-app/main/default/classes/ @relativelyAbhi
